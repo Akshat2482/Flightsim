@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Chakra Petch', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #000000;
+    color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+}
+
+.font-orbitron {
+  font-family: 'Orbitron', monospace, sans-serif;
+}
+
+.font-mono-hud {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Iron Man HUD Glowing effects */
+.hud-glow {
+  filter: drop-shadow(0 0 6px rgba(0, 240, 255, 0.7)) drop-shadow(0 0 12px rgba(0, 240, 255, 0.3));
+}
+
+.hud-glow-soft {
+  filter: drop-shadow(0 0 3px rgba(0, 240, 255, 0.5));
+}
+
+.hud-glow-amber {
+  filter: drop-shadow(0 0 6px rgba(255, 170, 0, 0.8));
+}
+
+.hud-text-glow {
+  text-shadow: 0 0 8px rgba(0, 240, 255, 0.8), 0 0 16px rgba(0, 240, 255, 0.4);
+}
+
+.hud-text-amber {
+  text-shadow: 0 0 8px rgba(255, 170, 0, 0.8);
+}
+
+/* Visor vignette and scanning scanlines */
+.hud-visor-overlay {
+  background: radial-gradient(circle at center, transparent 50%, rgba(0, 15, 30, 0.4) 85%, rgba(0, 5, 15, 0.85) 100%);
+  pointer-events: none;
+}
+
+.hud-scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 240, 255, 0.02) 50%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+}
+
+/* Cesium container adjustments */
+.cesium-viewer {
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden !important;
+}
+
+.cesium-viewer-bottom {
+  display: none !important;
+}
+
+.cesium-widget-credits {
+  opacity: 0.3 !important;
+  font-size: 10px !important;
+  position: absolute !important;
+  bottom: 4px !important;
+  left: 10px !important;
+  pointer-events: auto !important;
+}
+
+/* Warp speed tunnel effect */
+@keyframes warpPulse {
+  0% { transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.04); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.7; }
+}
+
+.warp-pulse {
+  animation: warpPulse 0.4s infinite ease-in-out;
+}
+

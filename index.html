@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Apex Mach - Iron Man POV Flight Simulator</title>
+    <meta name="description" content="Browser-based first-person flight simulator with CesiumJS 3D photorealistic terrain, Iron Man sci-fi HUD, inverted throttle, hypersonic boost, and terrain-draped city overlays." />
+    <meta property="og:title" content="Apex Mach - Iron Man POV Flight Simulator" />
+    <meta property="og:description" content="Browser-based first-person flight simulator with CesiumJS 3D photorealistic terrain, Iron Man sci-fi HUD, inverted throttle, hypersonic boost, and terrain-draped city overlays." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts for Iron Man HUD & Flight Telemetry -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,600;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;500;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+
+    <!-- CesiumJS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cesium@1.126.0/Build/Cesium/Widgets/widgets.css" />
+    <script>
+      window.CESIUM_BASE_URL = 'https://cdn.jsdelivr.net/npm/cesium@1.126.0/Build/Cesium/';
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/cesium@1.126.0/Build/Cesium/Cesium.js"></script>
+  </head>
+  <body class="bg-black text-white overflow-hidden select-none">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

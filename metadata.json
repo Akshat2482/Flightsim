@@ -1,0 +1,6 @@
+{
+  "name": "Apex Mach - Iron Man POV Flight Simulator",
+  "description": "Browser-based first-person flight simulator with CesiumJS 3D photorealistic terrain, Iron Man sci-fi HUD, inverted throttle, hypersonic boost, and terrain-draped city overlays.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
